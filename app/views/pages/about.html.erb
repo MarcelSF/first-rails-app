@@ -1,0 +1,11 @@
+<h1>Information about batch <%= @batch_number %>!</h1>
+
+<h3>Meet our team</h3>
+
+<ul>
+  <% @members.each do |member| %>
+   <li><%= member %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to home page', root_path %>
